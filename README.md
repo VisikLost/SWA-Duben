@@ -1,4 +1,5 @@
-# SWA-Duben
+# SWA_ZaverecnyProjekt
+
 Závěrečný úkol do předmětu Software a Webové aplikace
 
 Tento projekt bude webová stránka fiktivní restaurace, kde budou použity jazyky HTML, CSS, JS a PHP.
