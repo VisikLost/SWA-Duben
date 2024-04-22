@@ -110,13 +110,13 @@
     }
 }
 
-@media only screen and (max-width: 1050px){
+@media only screen and (max-width: 1150px){
     .js-li a {
         font-size: 20px;
     }
 
     .home-icon {
-        max-width: 57px;
+        max-width: 38px;
     }
 }
 
@@ -164,10 +164,18 @@
     }
 }
 
-@media only screen and (max-width: 730px){  
+@media only screen and (max-width: 750px){  
+
+    /* 730 */
+    
     .list-js {
         display: none;
         font-size: 32px;
+    }
+
+    .list-js li {
+        float: none;
+        text-align: center;
     }
 
     .hamburger {

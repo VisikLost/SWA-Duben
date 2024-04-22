@@ -11,6 +11,21 @@ body {
     overflow-x: hidden;
 }
 
+
+/* Google Analytics */
+
+.termsfeed-com---nb .cc-nb-main-container {
+    padding: 3rem;
+    width: 100vw;
+    background-color: #111;
+}
+
+.termsfeed-com---nb {
+    left: 0;
+    overflow: visible;
+    text-align: center;
+}
+
 /* Nadpisy */
 
 .nadpis-h2 {
@@ -43,23 +58,26 @@ nav a {
 
 nav ul {
     float: right;
+    display: flex;
+    margin-right: 1vh;
 }
 
 nav ul li {
-    display: inline-block;
     list-style-type: none;
     position: relative;
+    float: right;
 }
 
 nav ul li a {
-    display: block;
+    display: inline-block;
     color: white;
     padding: 2.5vh 1.5vh;
     text-align: center;
     font-size: 32px;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.5s;
+    letter-spacing: 1px;
+    transition: 0.7s;
 }
 
 nav ul li a:hover {
@@ -78,13 +96,14 @@ nav a:hover {
 }
 
 .home-icon {
-    max-width: 65px;
-    aspect-ratio: 1;
+    max-width: 55px;
     border: 2px solid white;
     background-color: white;
     border-radius: 50%;
     padding: 5px;   
 }
+
+
 
 .hamburger {
     width: 50px;
@@ -221,7 +240,7 @@ footer {
 }
 
 .footer-container {
-    background-color: #4a4a4a67;
+    background-color: #2a2d3767;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
