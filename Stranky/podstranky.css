@@ -7,7 +7,7 @@ hr {
 }
 
 #header1 {
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Obrázky/header-pic2.jpg);
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Obrazky/header-pic2.jpg);
     background-size: cover;
     height: 60vh;
     background-position: center;
@@ -69,7 +69,7 @@ hr {
 /*** Stránka napojový lístek ***/
 
 #header2 {
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Obrázky/header-pic3.jpg);
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Obrazky/header-pic3.jpg);
     background-size: cover;
     height: 60vh;
     background-position: center;
@@ -117,7 +117,7 @@ hr {
 /*** Stránka denní menu ***/
 
 #header3 {
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Obrázky/header-pic4.jpg);
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Obrazky/header-pic4.jpg);
     background-size: cover;
     height: 60vh;
     background-position: center;
@@ -174,7 +174,7 @@ hr {
 /*** Stránka kontakty ***/
 
 #header4 {
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Obrázky/header-pic5.jpg);
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Obrazky/header-pic5.jpg);
     background-size: cover;
     height: 60vh;
     background-position: center;
@@ -207,6 +207,11 @@ hr {
     letter-spacing: 1.5px;
     
 }
+
+.inputo:hover {
+    background-color: rgb(240, 240, 240);
+}
+
  
 .inputo::placeholder {
     color: #A78963;
@@ -224,6 +229,7 @@ hr {
     width: 90%;
     background-color: white;
     color: #A78963;
+    cursor: pointer;
 }
 
 .right-kontakt {
@@ -233,6 +239,7 @@ hr {
 .right-kontakt h2 {
     color: #A78963;
     letter-spacing: 1.5px;
+    margin-top: 10px;
     margin-bottom: 10px;
     font-size: 35px;   
 }
@@ -251,6 +258,10 @@ hr {
     margin: 5px;
 }
 
+.con .time {
+    text-align: right;
+}
+
 .time1 {
     text-align: left;
 }
@@ -258,7 +269,7 @@ hr {
 /*** Stránka recenze ***/
 
 #header5 {
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Obrázky/header-pic6.jpg);
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Obrazky/header-pic6.jpg);
     background-size: cover;
     height: 60vh;
     background-position: center;
