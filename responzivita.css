@@ -23,6 +23,10 @@
     .container4 form {
         text-align: center;
     }
+
+    .con .time {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 1919px){
