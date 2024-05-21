@@ -95,8 +95,8 @@
                     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
                     $mail->Port = 587;
 
-                    $mail->Username = "palakamak@seznam.cz";
-                    $mail->Password = "cfdyqmgzmmhicokc";
+                    $mail->Username = "{$email}";
+                    $mail->Password = "heslo";
                 
                 
                     $mail->setFrom("palakamak@seznam.cz");
