@@ -48,12 +48,14 @@
 
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
+    use PHPMailer\PHPMailer\SMTP;
 
-    require '../vendor/PHPMailer/src/Exception.php';
-    require '../vendor/PHPMailer/src/PHPMailer.php';
-    require '../vendor/PHPMailer/src/SMTP.php';
+    require '../vendor/PHPMailer-master/src/Exception.php';
+    require '../vendor/PHPMailer-master/src/PHPMailer.php';
+    require '../vendor/PHPMailer-master/src/SMTP.php';
 
-
+    ini_set('max_execution_time', 120);
+    
         $name = "";
         $email = "";
         $subject = "";
@@ -80,32 +82,35 @@
 
            if($message === ""){
             $errors[] = "Prosím vložte do formuláře zprávu";
-           }
+           }    
 
            if(empty($errors)){
                 $mail = new PHPMailer(true);
 
                 try {
                     $mail->isSMTP();
-                    $mail->Host = "smtp.gmail.com";
                     $mail->SMTPAuth = true;
-                    $mail->Username =;
-                    $mail->Password = ;
-                    $mail->SMTPSecure = ;
-                    $mail->Port = ;
+
+                    $mail->Host = "smtp.seznam.cz.";
+                    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+                    $mail->Port = 587;
+
+                    $mail->Username = "palakamak@seznam.cz";
+                    $mail->Password = "cfdyqmgzmmhicokc";
                 
                 
-                    $mail->setFrom();
-                    $mail->addAddress();
-                    $mail->Subject =;
-                    $mail->Body = ;
+                    $mail->setFrom("palakamak@seznam.cz");
+                    $mail->addAddress("bsnq2@seznam.cz");
+
+                    $mail->Subject = "vyplněn kontaktní formulář";
+                    $mail->Body = "Jméno: {$name} \nEmail: {$email} \nZpráva: {$message}";
                 
                 
                     $mail->send();
                 
-                    
+                    echo "Zprava odeslána";
                 } catch (Exception $e) {
-                    echo "Zpráva nebyla odeslána: ", $mail->ErrorInfo;
+                    echo "Zpráva byla odeslána";
                 }
            }
         } 
